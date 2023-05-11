@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-clnm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:84932a8399de22d01deaaab7be6a9d54082e40e618dd5793c1df39a2cb9cbacf
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
